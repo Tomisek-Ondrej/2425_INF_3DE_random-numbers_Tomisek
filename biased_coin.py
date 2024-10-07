@@ -1,7 +1,11 @@
 import random
 
 def flip_biased_coin(p):
-    return random.randint(0,1)
+    random_value = random.random()
+    if random_value < p:
+        return "Heads"
+    else:
+        return "Tails"
     pass
 
 # Otestování funkce
